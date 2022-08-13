@@ -1,6 +1,22 @@
 # Registration-Web-Application
 Registration form submits to server, data is saved to database file; response is entered data and thank you pg.
 
+Application is a work in progress:
+---------------------------------------------------------------------------------------------------------------------------
+THIS IS NOT SECURE. Don't try to use it for anything important; I just did this as a learning exercise in node js.
+
+Instructions:
+---------------------------------------------------------------------------------------------------------------------------
+1. open up command line terminal, & start up your server (doesn't really matter what you use) in the same directory as the project, and navigate to the url.
+
+2. enter data into the form and submit.
+
+3. the server processes the data on the backend and saves it to a database file. Even after the server goes down, the data remains. :)
+
+------------------------------------------------------------------------------------------------------------------------------
+
+I will be working on SQL Server Integration Pipeline soon as well. Thanks for checking out my app!
+
 ##BUILD NOTES:  -JAMES HARDY
 
 ========================================================================
