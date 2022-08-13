@@ -11,16 +11,9 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script>
-    if ('geolocation' in navigator) {
-            //console.log('geolocation available')
-            navigator.geolocation.getCurrentPosition(async(position) => {
-              const lat = position.coords.latitude;
-              const lon = position.coords.longitude;
+     <script>
+            
               const title = document.getElementById('title')
-              //display geoLocation:
-              document.getElementById('latitude').textContent = lat;
-              document.getElementById('longitude').textContent = lon;
               //form:
               const form = document.getElementById('form');
               const formData = new FormData(form);
@@ -29,7 +22,7 @@
               //const userInput = document.querySelector('input');
               const route = '/room1';
               
-            const data = {lat, lon, formData}
+            const data = {formData}
 
             const options = {
               method: 'POST',
@@ -47,10 +40,8 @@
               window.location.href = 'http://localhost:3000/thank-you.html'
             return json;
             }
-});
-    } else {
-      console.log('geolocation NOT available')
-    }</script>
+
+     </script>
 	<script src="index.js"></script>
   <!-- COMMENTED OUT:
   <p>Lattitude: <span id="latitude"></span></p>
