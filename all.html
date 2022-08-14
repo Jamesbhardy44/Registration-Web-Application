@@ -7,16 +7,36 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Data Selfie App</h1>
+    <h1>Database View:</h1>
     <script>
         const route = '/room1'
+        getData()
         async function getData(){
              fetch(route)
              const response = await fetch(route)
              const json = await response.json();
              console.log(json)
+
+        for(item of json){
+          const root = document.createElement('div');
+          const firstName = document.createElement('div');
+          const lastName = document.createElement('div');  
+          const email = document.createElement('div');
+          const phoneNumber = document.createElement('div');
+
+          lastName.textContent = item.lastName;
+          email.textContent = item.email;
+          firstName.textContent = item.firstName;
+          phoneNumber.textContent = item.phoneNumber
+          const date = document.createElement('div');
+          const dateStr = new Date('item.timestamp').toLocaleString();
+          date.textContent = dateStr;
+
+          root.append(firstName, lastName, email, phoneNumber);
+          document.body.append(root);
         }
-       getData()
+        console.log(json);
+      }  
        
     </script>
   </body>
