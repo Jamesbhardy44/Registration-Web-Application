@@ -1,15 +1,15 @@
 {
   "name": "data-selfie",
   "version": "1.0.0",
-  "description": "Registration app by James Hardy",
+  "description": "This is the data selfie app by Joey Lee.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "form",
+    "example",
     "data",
-    "registration"
+    "selfie"
   ],
   "author": "James Hardy",
   "license": "MIT",

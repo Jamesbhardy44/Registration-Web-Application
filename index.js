@@ -17,7 +17,7 @@ app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 //use these files: static files in 'public' folder, and use json w/ limit
 app.use(express.static('public'));
-app.use(express.json({limit: '1mb'}));
+app.use(express.json({limit: '20mb'}));
 
 
 
@@ -26,8 +26,11 @@ const dataBase = new dataStore('database.db');
 dataBase.loadDatabase();
 
 app.get(route, (request, response)=>{
-    console.log(request + 'recieved')
-    dataBase.find({}, (err, data)=>{ //.find({}) ~= SELECT *
+    dataBase.find(
+        {},//all
+        //{_id:_id},
+        //{LastName:ln},
+        (err, data)=>{ //.find({}) ~= SELECT *
         if(err){console.log(err); response.end(); return;}
         response.json(data);
         response.end();
