@@ -85,3 +85,13 @@ const userInput = document.querySelector('input');
 ##working on thank you page redirect.
 
 ##currently things submit fine on backend, but frontend needs to show a thank you page.
+
+-----------------------------
+08/14/2022
+
+
+##we are now able to display the entire DB on web page
+
+#now able to query based on anything SERVERSIDE.
+
+##need to implement client side querying: pass a dynamic value into the request.
