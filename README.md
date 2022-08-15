@@ -4,6 +4,11 @@ Registration form submits to server, data is saved to database file; read & quer
 Application is a work in progress:
 ---------------------------------------------------------------------------------------------------------------------------
 THIS IS NOT SECURE. Don't try to use it for anything important; I just did this as a learning exercise in node js.
+The database used: NEDB is an open-source offshoot based off the MongoDB API.
+
+
+                found here: https://github.com/louischatriot/nedb#basic-querying
+
 
 Instructions:
 ---------------------------------------------------------------------------------------------------------------------------
