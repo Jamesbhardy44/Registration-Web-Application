@@ -1,5 +1,5 @@
 # Registration-Web-Application
-Registration form submits to server, data is saved to database file; response is entered data and thank you pg.
+Registration form submits to server, data is saved to database file; read & query database.
 
 Application is a work in progress:
 ---------------------------------------------------------------------------------------------------------------------------
